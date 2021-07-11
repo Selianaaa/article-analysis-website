@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Article Analysis</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -12,27 +16,29 @@
     </header>
 
     <main>
-      <section>
-        <form class="" onsubmit="return Client.handleSubmit(event)">
+      <section class="card">
+        <form class="card_form" onsubmit="return Client.handleSubmit(event)">
           <input
             id="name"
             type="text"
             name="input"
             value=""
             placeholder="Name"
+            class="url_input"
           />
           <input
             type="submit"
             name=""
             value="submit"
+            class="submit_button"
             onclick="return Client.handleSubmit(event)"
             onsubmit="return Client.handleSubmit(event)"
           />
         </form>
       </section>
 
-      <section>
-        <strong>Form Results:</strong>
+      <section class="result_wrapper">
+        <div class="result_text">Form Results:</div>
         <div id="results"></div>
       </section>
     </main>
