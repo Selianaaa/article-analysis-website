@@ -23,13 +23,23 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: './src/client/styles/_variables.scss',
+            },
+          },
+        ],
       },
     ],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/client/index.html',
+      template: './src/client/views/index.html',
       filename: './index.html',
     }),
     new CleanWebpackPlugin({

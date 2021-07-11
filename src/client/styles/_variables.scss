@@ -1,0 +1,30 @@
+$colors: (
+  'white': #f9f9f9,
+  'gray': #a0a5a8,
+  'black': #181818,
+  'bg': #edf2f0,
+  'neu-1': #ecf0f3,
+  'neu-2': #d1d9e6,
+);
+
+@function color($key) {
+  @return map-get($map: $colors, $key: $key);
+}
+
+// $transition: 1.25s;
+
+// @function shadow($key) {
+//   @return map-get($map: $shadows, $key: $key);
+// }
+
+// $shadows: (
+//   1: 0px 2px 5px rgba(192, 188, 210, 0.07),
+//   3: 0px 2px 5px rgba(192, 188, 210, 0.3),
+// );
+
+// $screenWidth: (
+//   pc: 1920px,
+//   minPc: 1440px,
+//   laptop: 768px,
+//   phone: 480px,
+// );

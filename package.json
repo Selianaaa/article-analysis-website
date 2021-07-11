@@ -9,13 +9,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node src/server/index.js",
     "build:prod": "webpack --config config/webpack.prod.js",
-    "dev": "webpack serve  --config config/webpack.dev.js --open"
+    "dev": "webpack serve  --config config/webpack.dev.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "prettier": "^2.3.2",
+    "sass-resources-loader": "^2.2.3",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2"
   },
