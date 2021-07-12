@@ -2,7 +2,7 @@
   margin-top: 40px;
   padding: 30px;
   width: 400px;
-  min-height: 170px;
+  height: 240px;
   border-radius: 23px;
   background: $main_color;
   box-shadow: 5px 5px 14px $dark_shadow, -4px -4px 14px $light_shadow;
@@ -10,7 +10,7 @@
 }
 
 .result_text {
-  @include baseText(27px, 600);
+  @include neuText(27px, 600);
   margin-bottom: 10px;
 }
 
@@ -20,7 +20,7 @@
 
   p {
     margin-top: 5px;
-    @include baseText(16px, 600);
+    @include neuText(16px, 600);
 
     span {
       font-size: 16px;

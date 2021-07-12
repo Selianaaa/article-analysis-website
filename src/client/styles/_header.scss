@@ -3,6 +3,17 @@ header {
   width: 100%;
   @include baseRow;
   justify-content: space-between;
-  padding: 10px 40px;
-  border: 1px solid red;
+  padding: 14px 40px;
+  background: $second_color;
+}
+
+.header_title {
+  @include baseText(18px, 600);
+  color: white;
+  text-transform: uppercase;
+}
+
+.header_text {
+  @include baseText(16px, 600);
+  color: white;
 }

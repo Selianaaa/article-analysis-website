@@ -1,13 +1,5 @@
-$colors: (
-  'white': #f9f9f9,
-  'gray': #a0a5a8,
-  'black': #181818,
-  'bg': #f2f2f2,
-  'neu-1': #ecf0f3,
-  'neu-2': #d1d9e6,
-);
-
 $main_color: #d4a1bc;
+$second_color: #3f3131;
 $dark_shadow: #b489a0;
 $light_shadow: #f4b9d8;
 $text_color: #2b0329;
@@ -18,20 +10,14 @@ $light_shadow_error: #ff3e57;
 
 $preloader_color: #2b0329;
 
-@function color($key) {
-  @return map-get($map: $colors, $key: $key);
-}
+// $shadows: (
+//   1: 4px 4px 10px color('neu-2'),
+//   3: -4px -4px 10px color('white'),
+// );
 
-$shadows: (
-  1: 4px 4px 10px color('neu-2'),
-  3: -4px -4px 10px color('white'),
-);
-
-@function shadow($key) {
-  @return map-get($map: $shadows, $key: $key);
-}
-
-$transition: 1.25s;
+// @function shadow($key) {
+//   @return map-get($map: $shadows, $key: $key);
+// }
 
 // $screenWidth: (
 //   pc: 1920px,

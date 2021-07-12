@@ -6,6 +6,7 @@ export function handleSubmit(event) {
 
   const preloaderElement = document.querySelector('#preloader');
   preloaderElement.style.display = 'block';
+  document.getElementById('results').style.display = 'none';
 
   const url =
     'https://learnenglishteens.britishcouncil.org/magazine/life-around-world/porridge-perfect-breakfast';
