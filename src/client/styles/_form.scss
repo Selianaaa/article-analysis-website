@@ -6,12 +6,21 @@
   height: 100%;
 }
 
+.card {
+  position: relative;
+  width: 400px;
+  padding: 30px;
+  border-radius: 23px;
+  background: $main_color;
+  box-shadow: 5px 5px 14px $dark_shadow, -4px -4px 14px $light_shadow;
+}
+
 .url_input,
 .submit_button {
   border: none;
   outline: none;
   border-radius: 7px;
-  background: $main-color;
+  background: $main_color;
 }
 
 .url_input {
@@ -21,7 +30,7 @@
   box-shadow: inset 2px 2px 4px $dark_shadow, inset -2px -2px 4px $light_shadow;
 
   &::placeholder {
-    color: $text-color;
+    color: $text_color;
     font-size: 15px;
     font-weight: 400;
   }
@@ -47,5 +56,22 @@
   &:active {
     box-shadow: inset 2px 2px 4px $dark_shadow,
       inset -2px -2px 4px $light_shadow;
+  }
+}
+
+.url_error {
+  background: #f33043;
+
+  box-shadow: inset 5px 5px 10px $dark_shadow_error,
+    inset -5px -5px 10px $light_shadow_error;
+
+  &::placeholder {
+    color: $text_color_error;
+  }
+
+  &:focus {
+    background: $main_color;
+    box-shadow: inset 4px 4px 4px $dark_shadow,
+      inset -4px -4px 4px $light_shadow;
   }
 }

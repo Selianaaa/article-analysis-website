@@ -11,19 +11,21 @@
 
   <body>
     <header>
-      <div class="">Logo</div>
-      <div class="">navigation</div>
+      <div class="">Article Analysis</div>
+      <div class="">
+        Evaluate a news article with Natural Language Processing
+      </div>
     </header>
 
     <main>
       <section class="card">
         <form class="card_form" onsubmit="return Client.handleSubmit(event)">
           <input
-            id="name"
+            id="url"
             type="text"
             name="input"
             value=""
-            placeholder="Name"
+            placeholder="Article Url"
             class="url_input"
           />
           <input
@@ -38,13 +40,26 @@
       </section>
 
       <section class="result_wrapper">
-        <div class="result_text">Form Results:</div>
-        <div id="results"></div>
+        <div class="result_text">Analysis Results:</div>
+        <div id="preloader">
+          <div class="preloader_ring first_ring">
+            <div class="preloader_ring second_ring">
+              <div class="preloader_ring third_ring"></div>
+            </div>
+          </div>
+        </div>
+        <div id="results">
+          <p id="agreement">Agreement: <span></span></p>
+          <p id="confidence">Confidence: <span></span></p>
+          <p id="irony">Irony: <span></span></p>
+          <p id="score">Score: <span></span></p>
+          <p id="subjectivity">Subjectivity: <span></span></p>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>This is a footer</p>
+      <p>Developed using Meaning Cloud API</p>
     </footer>
   </body>
 </html>

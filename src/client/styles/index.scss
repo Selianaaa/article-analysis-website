@@ -1,6 +1,8 @@
-@import './_footer.scss';
-@import './_form.scss';
 @import './_header.scss';
+@import './_form.scss';
+@import './_preloader.scss';
+@import './_result.scss';
+@import './_footer.scss';
 
 * {
   margin: 0;
@@ -11,7 +13,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: $main-color;
+  background: $main_color;
   font-family: 'Montserrat', sans-serif;
   color: white;
   @include baseColumn;
@@ -21,21 +23,4 @@ main {
   flex: 1;
   @include baseColumn;
   justify-content: center;
-}
-
-.card {
-  position: relative;
-  width: 400px;
-  padding: 30px;
-  border-radius: 23px;
-  background: $main-color;
-  box-shadow: 5px 5px 14px $dark_shadow, -4px -4px 14px $light_shadow;
-}
-
-.result_wrapper {
-  margin-top: 40px;
-}
-
-.result_text {
-  @include baseText(30px, 600);
 }

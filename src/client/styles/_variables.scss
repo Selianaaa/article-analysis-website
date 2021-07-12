@@ -7,10 +7,16 @@ $colors: (
   'neu-2': #d1d9e6,
 );
 
-$main-color: #d4a1bc;
+$main_color: #d4a1bc;
 $dark_shadow: #b489a0;
 $light_shadow: #f4b9d8;
-$text-color: #2b0329;
+$text_color: #2b0329;
+
+$text_color_error: white;
+$dark_shadow_error: #aa222f;
+$light_shadow_error: #ff3e57;
+
+$preloader_color: #2b0329;
 
 @function color($key) {
   @return map-get($map: $colors, $key: $key);

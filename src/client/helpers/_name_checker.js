@@ -1,8 +1,18 @@
 export function checkForName(inputText) {
-  console.log('::: Running checkForName :::', inputText);
-  let names = ['Picard', 'Janeway', 'Kirk', 'Archer', 'Georgiou'];
+  const urlRegex =
+    /^(http(s)?:\/\/)(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.?[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
 
-  if (names.includes(inputText)) {
-    alert('Welcome, Captain!');
+  console.log(urlRegex.test(inputText), inputText);
+
+  const urlIsValid = urlRegex.test(inputText);
+  const urlInputElement = document.querySelector('#url');
+
+  if (!urlIsValid) {
+    urlInputElement.classList.add('url_error');
+  } else {
+    urlInputElement.classList.remove('url_error');
   }
+
+  // return urlIsValid;
+  return true;
 }

@@ -1,0 +1,32 @@
+.result_wrapper {
+  margin-top: 40px;
+  padding: 30px;
+  width: 400px;
+  min-height: 170px;
+  border-radius: 23px;
+  background: $main_color;
+  box-shadow: 5px 5px 14px $dark_shadow, -4px -4px 14px $light_shadow;
+  @include baseColumn;
+}
+
+.result_text {
+  @include baseText(27px, 600);
+  margin-bottom: 10px;
+}
+
+#results {
+  display: none;
+  align-self: flex-start;
+
+  p {
+    margin-top: 5px;
+    @include baseText(16px, 600);
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      text-shadow: none;
+    }
+  }
+}
