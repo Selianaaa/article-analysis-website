@@ -1,5 +1,11 @@
-export function handleSubmit(event) {
+/**
+ * Handle submit
+ */
+export const handleSubmit = (event) => {
   event.preventDefault();
+
+  const url =
+    'https://learnenglishteens.britishcouncil.org/magazine/life-around-world/porridge-perfect-breakfast';
 
   const formText = document.getElementById('url').value;
   if (!Client.checkForName(formText)) return;
@@ -8,13 +14,9 @@ export function handleSubmit(event) {
   preloaderElement.style.display = 'block';
   document.getElementById('results').style.display = 'none';
 
-  const url =
-    'https://learnenglishteens.britishcouncil.org/magazine/life-around-world/porridge-perfect-breakfast';
-
   fetch(`http://localhost:8081/check_article?articleUrl=${url}`)
     .then((res) => res.json())
     .then(function (res) {
-      console.log(res);
       preloaderElement.style.display = 'none';
       document.getElementById('results').style.display = 'block';
 
@@ -24,4 +26,4 @@ export function handleSubmit(event) {
       document.querySelector('#score span').innerHTML = res.score_tag;
       document.querySelector('#subjectivity span').innerHTML = res.subjectivity;
     });
-}
+};
