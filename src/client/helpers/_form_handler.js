@@ -2,12 +2,16 @@ export function handleSubmit(event) {
   event.preventDefault();
 
   // check what text was put into the form field
-  let formText = document.getElementById('name').value;
+  const formText = document.getElementById('name').value;
   Client.checkForName(formText);
 
-  fetch('http://localhost:8081/test')
+  const url =
+    'https://learnenglishteens.britishcouncil.org/magazine/life-around-world/porridge-perfect-breakfast';
+
+  fetch(`http://localhost:8081/check_article?articleUrl=${url}`)
     .then((res) => res.json())
     .then(function (res) {
-      document.getElementById('results').innerHTML = res.message;
+      console.log(res);
+      document.getElementById('results').innerHTML = res.agreement;
     });
 }
