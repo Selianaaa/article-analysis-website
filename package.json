@@ -6,7 +6,7 @@
   "author": "seliana <cany96@bk.ru>",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "server": "node src/server/index.js",
     "build:prod": "webpack --config config/webpack.prod.js",
     "dev": "webpack serve  --config config/webpack.dev.js"
@@ -29,6 +29,7 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
     "mini-css-extract-plugin": "^2.1.0",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",

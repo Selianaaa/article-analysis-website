@@ -1,4 +1,18 @@
-import { checkForName, handleSubmit } from './helpers';
+import {
+  urlIsValid,
+  handleSubmit,
+  getArticleAnalysis,
+  displayArticleAnalysis,
+  showPreloader,
+  showResult,
+} from './helpers';
 import './styles/index.scss';
 
-export { checkForName, handleSubmit };
+export {
+  urlIsValid,
+  handleSubmit,
+  getArticleAnalysis,
+  displayArticleAnalysis,
+  showPreloader,
+  showResult,
+};
