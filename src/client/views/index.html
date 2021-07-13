@@ -60,5 +60,19 @@
     <footer>
       <div class="footer_text">Developed using Meaning Cloud API</div>
     </footer>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/service-worker.js')
+            .then((registraion) => {
+              console.log('registraion is successful');
+            });
+        });
+      } else {
+        console.log('service worker are not supported');
+      }
+    </script>
   </body>
 </html>
