@@ -30,5 +30,4 @@ $ yarn build:prod
 
 ## Demo
 
-<!--
-Check the project [here](https://selianaaa.github.io/dynamic-landing-page/). -->
+Check the project [here](https://stupefied-kalam-22df43.netlify.app).
