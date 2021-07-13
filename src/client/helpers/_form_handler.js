@@ -4,17 +4,14 @@
 export const handleSubmit = (event) => {
   event.preventDefault();
 
-  const url =
-    'https://learnenglishteens.britishcouncil.org/magazine/life-around-world/porridge-perfect-breakfast';
-
-  const formText = document.getElementById('url').value;
-  if (!Client.checkForName(formText)) return;
+  const articleUrl = document.getElementById('url').value;
+  if (!Client.checkForName(articleUrl)) return;
 
   const preloaderElement = document.querySelector('#preloader');
   preloaderElement.style.display = 'block';
   document.getElementById('results').style.display = 'none';
 
-  fetch(`http://localhost:8081/check_article?articleUrl=${url}`)
+  fetch(`http://localhost:8081/check_article?articleUrl=${articleUrl}`)
     .then((res) => res.json())
     .then(function (res) {
       preloaderElement.style.display = 'none';

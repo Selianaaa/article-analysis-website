@@ -34,3 +34,11 @@
   font-weight: $font-weight;
   font-size: $font-size;
 }
+
+/* ============= adaptive ============= */
+
+@mixin mobileScreen {
+  @media (max-width: $mobile_width) {
+    @content;
+  }
+}

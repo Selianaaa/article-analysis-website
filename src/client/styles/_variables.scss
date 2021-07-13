@@ -4,24 +4,13 @@ $dark_shadow: #b489a0;
 $light_shadow: #f4b9d8;
 $text_color: #2b0329;
 
+// error
 $text_color_error: white;
 $dark_shadow_error: #aa222f;
 $light_shadow_error: #ff3e57;
 
+// preloader
 $preloader_color: #2b0329;
 
-// $shadows: (
-//   1: 4px 4px 10px color('neu-2'),
-//   3: -4px -4px 10px color('white'),
-// );
-
-// @function shadow($key) {
-//   @return map-get($map: $shadows, $key: $key);
-// }
-
-// $screenWidth: (
-//   pc: 1920px,
-//   minPc: 1440px,
-//   laptop: 768px,
-//   phone: 480px,
-// );
+// screen
+$mobile_width: 620px;

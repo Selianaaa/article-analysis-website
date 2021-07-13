@@ -7,11 +7,20 @@
   background: $main_color;
   box-shadow: 5px 5px 14px $dark_shadow, -4px -4px 14px $light_shadow;
   @include baseColumn;
+
+  @include mobileScreen {
+    width: 280px;
+    height: 200px;
+  }
 }
 
 .result_text {
   @include neuText(27px, 600);
   margin-bottom: 10px;
+
+  @include mobileScreen {
+    font-size: 20px;
+  }
 }
 
 #results {
@@ -27,6 +36,16 @@
       font-weight: 600;
       color: white;
       text-shadow: none;
+    }
+  }
+
+  @include mobileScreen {
+    p {
+      font-size: 14px;
+
+      span {
+        font-size: 14px;
+      }
     }
   }
 }

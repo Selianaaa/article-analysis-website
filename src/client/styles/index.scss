@@ -23,4 +23,9 @@ main {
   flex: 1;
   @include baseColumn;
   justify-content: center;
+  padding: 40px 30px;
+
+  @include mobileScreen {
+    padding: 30px 15px;
+  }
 }

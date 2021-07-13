@@ -17,6 +17,5 @@ export const checkForName = (inputText) => {
     urlInputElement.classList.remove('url_error');
   }
 
-  // return urlIsValid;
-  return true;
+  return urlIsValid;
 };
