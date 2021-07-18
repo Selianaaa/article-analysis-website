@@ -32,4 +32,4 @@ $ yarn build:prod
 
 ## Demo
 
-Check the project [here](seliana-article-analysis.netlify.app).
+Check the project [here](https://seliana-article-analysis.netlify.app).
