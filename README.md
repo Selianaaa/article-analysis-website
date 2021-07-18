@@ -20,7 +20,9 @@ $ yarn install
 
 ### Compiles and hot-reloads for development
 
-`yarn run dev`
+```
+$ yarn dev
+```
 
 ### Compiles and minifies for production
 
@@ -30,4 +32,4 @@ $ yarn build:prod
 
 ## Demo
 
-Check the project [here](https://stupefied-kalam-22df43.netlify.app).
+Check the project [here](seliana-article-analysis.netlify.app).

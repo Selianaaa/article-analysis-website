@@ -9,7 +9,7 @@
     "test": "jest",
     "server": "node src/server/index.js",
     "build:prod": "webpack --config config/webpack.prod.js",
-    "dev": "webpack serve  --config config/webpack.dev.js"
+    "dev": "webpack serve --config config/webpack.dev.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
