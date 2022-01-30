@@ -3,6 +3,7 @@
  */
 export const handleSubmit = (event) => {
   event.preventDefault();
+  console.log('AAAA');
 
   const articleUrl = document.getElementById('url').value;
   document.querySelector('#url').classList.remove('url_error');

@@ -6,10 +6,9 @@ const dotenv = require('dotenv');
 const fetch = require('node-fetch');
 
 dotenv.config();
-const apiKey = process.env.API_KEY;
+const apiKey = 'e5b73679f842711172fbf7a8c78ed4b5';
 const baseApiUrl = 'https://api.meaningcloud.com/sentiment-2.1';
 
-console.log(`Your API key is ${process.env.API_KEY}`);
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
