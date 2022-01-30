@@ -3,7 +3,8 @@ export const getArticleAnalysis = (url) => {
     .then((res) => res.json())
     .then(function (res) {
       Client.displayArticleAnalysis(res);
-    });
+    })
+    .catch((err) => alert(err));
 };
 
 export const displayArticleAnalysis = (data) => {
